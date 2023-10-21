@@ -13,8 +13,12 @@ def write_text_to_file(text, output_file):
     with open(output_file, 'w', encoding='utf-8') as file:
         file.write(text)
 
-pdf_path = "data_unstr/1.pdf"  # Replace with your PDF file path
-output_file = "data_unstr/1.txt"  # Replace with the desired output file name
+pdf_path = "4.pdf"  # Replace with your PDF file path
+output_file = "4.txt"  # Replace with the desired output file name
 
 extracted_text = extract_text_from_pdf(pdf_path)
 write_text_to_file(extracted_text, output_file)
+
+
+with open('4.txt' , 'r') as file:
+
